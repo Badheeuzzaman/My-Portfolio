@@ -1,0 +1,301 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Ishak Badheeuzzaman</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+
+<body>
+
+    <!-- ── Nav ── -->
+    <nav id="navbar">
+        <div class="nav-logo">I.Badheeuzzaman</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#hero" onclick="closeMobile()">Home</a>
+        <a href="#about" onclick="closeMobile()">About</a>
+        <a href="#projects" onclick="closeMobile()">Projects</a>
+        <a href="#services" onclick="closeMobile()">Services</a>
+        <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+
+    <!-- ── Hero ── -->
+    <section id="hero">
+        <div class="hero-layout">
+            <div class="hero-inner">
+                <div class="hero-tag">✦ Available for Freelance</div>
+                <h1 class="hero-title">
+                    Crafting <em>digital</em><br>experiences that matter
+                </h1>
+                <p class="hero-sub">
+                    I'm Ishak Badheeuzzaman — a passionate CS student &amp; web developer who builds elegant, performant
+                    web products from concept to launch.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work →</a>
+                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                    <a href="#" class="btn btn-outline" style="border-color:rgba(106,170,245,.5);color:var(--sky);"
+                        onclick="viewCV(event)">📄 My CV</a>
+                </div>
+            </div>
+            <div class="hero-photo-wrap">
+                <div class="hero-photo-ring"></div>
+                <div class="hero-photo-frame">
+                    <img src="assets/Image/2303S0854.JPG"    alt="Ishak Badheeuzzaman" />
+                </div>
+                <div class="hero-photo-dot d1"></div>
+                <div class="hero-photo-dot d2"></div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ── About ── -->
+    <section id="about">
+        <div class="about-grid">
+            <div class="about-img-wrap reveal">
+                <div class="about-img-frame">
+                    <img
+                        src="assets/Image/2303S0854.JPG"                    
+                        alt="Profile Photo"
+                        style="width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:20px;" />
+                </div>
+                <div class="about-accent"></div>
+                <div class="about-years">
+                    <!-- experience  -->
+                    <strong>INTERN</strong>
+                    <span></span>
+                </div>
+            </div>
+            <div class="reveal">
+                <p class="section-label">About Me</p>
+                <h2 class="section-title">Passionate about building great products</h2>
+                <p class="section-body">
+                    I am Ishak Badheeuzzaman, a dedicated Computer Science student currently in my 3rd year.
+                    My academic journey is fueled by a curiosity for how complex systems work and how to secure them.
+                </p>
+                <p class="section-body">
+                    I possess Basic-level knowledge across two exciting pillars of tech: Cyber Security and Artificial
+                    Intelligence.
+                    I strive to blend these disciplines creating secure, intelligent, and user-friendly applications and
+                    a drive for continuous improvement.
+                </p>
+                <div class="skills-list">
+                    <span class="skill-tag">HTML / CSS</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <!-- <span class="skill-tag">React</span> -->
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">Figma</span>
+                    <!-- <span class="skill-tag">REST APIs</span> -->
+                    <span class="skill-tag">Git</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Projects ── -->
+    <section id="projects" style="max-width:1200px;margin:0 auto;">
+        <div class="section-header reveal">
+            <p class="section-label">Portfolio</p>
+            <h2 class="section-title">Selected Projects</h2>
+        </div>
+        <div class="projects-grid">
+
+            <div class="project-card reveal">
+                <div class="card-thumb thumb-1"></div>
+                <div class="card-body">
+                    <div class="card-tags"><span class="card-tag">PHP</span><span class="card-tag">MongoDB</span></div>
+                    <h3 class="card-title">Education Empowerment System </h3>
+                    <p class="card-desc">A full-featured online Education System.</p>
+                </div>
+                <!-- <div class="card-footer">
+        <div class="card-links">
+          <a href="#" class="card-link">↗ Live Demo</a>
+          <a href="#" class="card-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div> -->
+
+                <!-- <div class="project-card reveal">
+      <div class="card-thumb thumb-2">📊</div>
+      <div class="card-body">
+        <div class="card-tags"><span class="card-tag">TypeScript</span><span class="card-tag">D3.js</span></div>
+        <h3 class="card-title">AnalyticsHub Dashboard</h3>
+        <p class="card-desc">Real-time data visualisation dashboard with customisable widgets and live WebSocket feeds.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-links">
+          <a href="#" class="card-link">↗ Live Demo</a>
+          <a href="#" class="card-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="card-thumb thumb-3">💬</div>
+      <div class="card-body">
+        <div class="card-tags"><span class="card-tag">Socket.io</span><span class="card-tag">MongoDB</span></div>
+        <h3 class="card-title">ChatterBox Messaging</h3>
+        <p class="card-desc">End-to-end encrypted real-time chat application with rooms, presence, and media sharing.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-links">
+          <a href="#" class="card-link">↗ Live Demo</a>
+          <a href="#" class="card-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="card-thumb thumb-4">🗓️</div>
+      <div class="card-body">
+        <div class="card-tags"><span class="card-tag">Next.js</span><span class="card-tag">Prisma</span></div>
+        <h3 class="card-title">Schedulr Task Manager</h3>
+        <p class="card-desc">Kanban-style productivity app with drag-and-drop boards, time tracking, and team collaboration.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-links">
+          <a href="#" class="card-link">↗ Live Demo</a>
+          <a href="#" class="card-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="card-thumb thumb-5">🌍</div>
+      <div class="card-body">
+        <div class="card-tags"><span class="card-tag">React Native</span><span class="card-tag">Maps</span></div>
+        <h3 class="card-title">WanderMap Travel App</h3>
+        <p class="card-desc">Travel companion app with interactive maps, itinerary builder, and offline support for 60+ countries.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-links">
+          <a href="#" class="card-link">↗ Live Demo</a>
+          <a href="#" class="card-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="card-thumb thumb-6">🤖</div>
+      <div class="card-body">
+        <div class="card-tags"><span class="card-tag">Python</span><span class="card-tag">OpenAI</span></div>
+        <h3 class="card-title">DocuBot AI Assistant</h3>
+        <p class="card-desc">RAG-powered chatbot that answers questions from your documentation — no hallucinations.</p>
+      </div>
+      <div class="card-footer">
+        <div class="card-links">
+          <a href="#" class="card-link">↗ Live Demo</a>
+          <a href="#" class="card-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div> -->
+
+            </div>
+    </section>
+
+    <!-- ── Services ── -->
+    <section id="services">
+        <div class="section-header reveal" style="text-align:center;max-width:1100px;margin:0 auto 3rem;">
+            <p class="section-label">What I Do</p>
+            <h2 class="section-title">Services</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <div class="service-icon">🎨</div>
+                <h3 class="service-title">UI / UX Design</h3>
+                <p class="service-desc">From wireframes to polished prototypes, I create intuitive, beautiful interfaces
+                    that delight users.</p>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon">💻</div>
+                <h3 class="service-title">Web Development</h3>
+                <p class="service-desc">Responsive, performant web applications built with modern frameworks and best
+                    practices.</p>
+            </div>
+            <!-- <div class="service-card reveal">
+      <div class="service-icon">📱</div>
+      <h3 class="service-title">Mobile Apps</h3>
+      <p class="service-desc">Cross-platform mobile experiences with React Native that feel native on iOS and Android.</p>
+    </div> -->
+            <div class="service-card reveal">
+                <div class="service-icon">⚙️</div>
+                <h3 class="service-title">Backend & APIs</h3>
+                <p class="service-desc">Scalable REST and GraphQL APIs, database design, and cloud infrastructure that
+                    performs under load.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Contact ── -->
+    <section id="contact">
+        <div class="contact-glow"></div>
+        <div style="position:relative;">
+            <div class="section-header reveal">
+                <p class="section-label">Get In Touch</p>
+                <h2 class="section-title">Let's work together</h2>
+                <p style="color:rgba(255,255,255,.5);font-size:.95rem;margin-top:.5rem;">Have a project in mind? Drop me
+                    a message and I'll get back within 24 hours.</p>
+            </div>
+            <form class="contact-form reveal" id="contactForm" onsubmit="handleSubmit(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="John Doe" required />
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="john@example.com" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" placeholder="Project inquiry..." />
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Tell me about your project..."></textarea>
+                </div>
+                <div class="submit-wrap">
+                    <button type="submit" class="btn btn-primary">Send Message →</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer>
+        <p>© 2025 Ishak Badheeuzzaman — Designed &amp; built with ❤️ &amp; ☕ &nbsp;|&nbsp; <a
+                href="mailto:badheeuzzaman2002@gmail.com">badheeuzzaman2002@gmail.com</a></p>
+    </footer>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">✓ Message sent! I'll reply soon.</div>
+
+<script src="assets/JS/script.js"></script>
+</body>
+
+</html>
