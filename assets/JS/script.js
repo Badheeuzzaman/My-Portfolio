@@ -43,7 +43,7 @@ function handleSubmit(e) {
 
 
 // ─── CV embed ───
-const CV_PATH = "assets/JS/I.Badheeuzzaman CV.pdf";
+const CV_PATH = "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/assets/JS/I.Badheeuzzaman%20CV.pdf";
 
 function viewCV(e) {
     e.preventDefault();
