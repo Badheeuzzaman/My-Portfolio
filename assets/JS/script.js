@@ -43,12 +43,11 @@ function handleSubmit(e) {
 
 
 // ─── CV embed ───
-const CV_B64 = "assets/JS/I.Badheeuzzaman CV.pdf"
+const CV_PATH = "assets/JS/I.Badheeuzzaman CV.pdf";
+
 function viewCV(e) {
     e.preventDefault();
-    const bytes = Uint8Array.from(atob(CV_B64), c => c.charCodeAt(0));
-    const blob = new Blob([bytes], { type: 'application/pdf' });
-    window.open(URL.createObjectURL(blob), '_blank');
+    window.open(CV_PATH, '_blank');
 }
 
 
