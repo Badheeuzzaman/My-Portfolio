@@ -91,7 +91,7 @@ export default function Hero() {
             <i className="fas fa-laptop-code"></i> CS 3rd Year Student
           </div>
           <div className="hero-photo-frame">
-            <img src="/profile.jpg" alt="Ishak Badheeuzzaman" />
+            <img src="/profile.jpeg" alt="Ishak Badheeuzzaman" />
           </div>
           <div className="photo-badge left-badge-bottom">
             <i className="fas fa-code-branch"></i> 3+ Projects

@@ -5,7 +5,7 @@ export default function About() {
         <div className="about-img-wrap reveal">
           <div className="about-img-frame">
             <img
-              src="/profile.jpg"
+              src="/profile.jpeg"
               alt="Ishak Badheeuzzaman"
               style={{
                 width: "100%",
@@ -21,7 +21,6 @@ export default function About() {
           <div className="about-accent"></div>
           <div className="about-years">
             <strong>INTERN</strong>
-            <span>LEVEL</span>
           </div>
         </div>
         <div className="reveal">

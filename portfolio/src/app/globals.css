@@ -222,7 +222,7 @@ section { position: relative; z-index: 1; padding: 7rem 6vw; }
 .about-img-frame img { position: relative; z-index: 1; width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:20px; }
 .about-img-frame::after { content: ''; position: absolute; inset: 0; background: linear-gradient(160deg, rgba(106,170,245,.12) 0%, transparent 60%); }
 .about-accent { position: absolute; width: 160px; height: 160px; border-radius: 16px; background: linear-gradient(135deg, var(--mid), var(--sky)); bottom: -24px; right: -24px; z-index: -1; opacity: .35; }
-.about-years { position: absolute; top: 24px; left: -24px; background: var(--mid); border-radius: 12px; padding: 1rem 1.4rem; text-align: center; box-shadow: var(--shadow); }
+.about-years { position: absolute; top: 24px; left: -24px; z-index: 2; background: var(--mid); border-radius: 12px; padding: 1rem 1.4rem; text-align: center; box-shadow: var(--shadow); }
 .about-years strong { display: block; font-size: 1.4rem; font-family: 'Playfair Display', serif; }
 .about-years span { font-size: .7rem; color: var(--pale); letter-spacing: 1px; }
 .about-body { color: rgba(255,255,255,.6); line-height: 1.8; margin-bottom: 1.5rem; }
@@ -326,6 +326,26 @@ section { position: relative; z-index: 1; padding: 7rem 6vw; }
 /* ─── Footer ─── */
 footer { position: relative; z-index: 1; text-align: center; padding: 2.5rem 6vw; border-top: 1px solid var(--border); color: rgba(255,255,255,.3); font-size: .85rem; }
 footer a { color: var(--sky); text-decoration: none; }
+.back-to-top {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--sky);
+  border-radius: 50%;
+  background: var(--mid);
+  color: var(--white);
+  font-size: 1.5rem;
+  line-height: 1;
+  box-shadow: var(--shadow);
+  transition: transform .2s, background .2s;
+}
+.back-to-top:hover { transform: translateY(-3px); background: var(--blue); }
+.back-to-top:focus-visible { outline: 2px solid var(--white); outline-offset: 3px; }
 
 /* ─── Toast ─── */
 .toast { position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%) translateY(100px); background: var(--mid); color: var(--white); padding: .8rem 2rem; border-radius: 50px; font-size: .9rem; box-shadow: var(--shadow); transition: transform .4s cubic-bezier(.34,1.56,.64,1); z-index: 999; }
